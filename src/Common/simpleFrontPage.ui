@@ -13,12 +13,19 @@
   <property name="windowTitle">
    <string>Atheris Browser</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/atheris-logo.png</normaloff>../img/atheris-logo.png</iconset>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextOnly</enum>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="backButton">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
+      <x>10</x>
+      <y>10</y>
       <width>31</width>
       <height>23</height>
      </rect>
@@ -34,8 +41,8 @@
    <widget class="QPushButton" name="towardButton">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>0</y>
+      <x>40</x>
+      <y>10</y>
       <width>31</width>
       <height>23</height>
      </rect>
@@ -51,8 +58,8 @@
    <widget class="QPushButton" name="refreshButton">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>0</y>
+      <x>70</x>
+      <y>10</y>
       <width>31</width>
       <height>23</height>
      </rect>
@@ -65,24 +72,11 @@
       <normaloff>../img/refresh.svg</normaloff>../img/refresh.svg</iconset>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>0</y>
-      <width>591</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>🔎 Enter search or web address</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="bookmarkButton">
     <property name="geometry">
      <rect>
-      <x>700</x>
-      <y>0</y>
+      <x>710</x>
+      <y>10</y>
       <width>31</width>
       <height>23</height>
      </rect>
@@ -98,8 +92,8 @@
    <widget class="QToolButton" name="toolButton">
     <property name="geometry">
      <rect>
-      <x>740</x>
-      <y>0</y>
+      <x>750</x>
+      <y>10</y>
       <width>31</width>
       <height>23</height>
      </rect>
@@ -110,6 +104,16 @@
     <property name="icon">
      <iconset>
       <normaloff>../img/options.svg</normaloff>../img/options.svg</iconset>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="browserInput">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>591</width>
+      <height>31</height>
+     </rect>
     </property>
    </widget>
   </widget>

@@ -8,7 +8,6 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-import webbrowser
 
 
 class Ui_MainWindow(object):
@@ -59,8 +58,6 @@ class Ui_MainWindow(object):
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit.setGeometry(QtCore.QRect(110, 10, 591, 20))
         self.lineEdit.setObjectName("lineEdit")
-        # calling webroser method
-        self.lineEdit.returnPressed.connect(self.webBrowse)
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -73,11 +70,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Atheris Browser"))
 
-    # method webBrowser
 
-    def webBrowse(self):
-        self.link = self.lineEdit.text()
-        webbrowser.open(self.link)
 
 
 if __name__ == "__main__":

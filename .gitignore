@@ -1,0 +1,16 @@
+# Editors
+#
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Compiled files
+#
+/dist
+/test/main.exe
+
+# Compiler depencies
+#
+main.spec

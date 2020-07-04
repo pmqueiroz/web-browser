@@ -14,3 +14,4 @@
 # Compiler depencies
 #
 main.spec
+/build/main/*

@@ -1,6 +1,7 @@
 # Editors
 #
 todo.txt
+mingw64-shortcut.lnk
 .vscode/*
 !.vscode/settings.json
 !.vscode/launch.json

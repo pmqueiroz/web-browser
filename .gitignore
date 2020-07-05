@@ -1,5 +1,6 @@
 # Editors
 #
+todo.txt
 .vscode/*
 !.vscode/settings.json
 !.vscode/launch.json

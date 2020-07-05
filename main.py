@@ -9,6 +9,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import webbrowser
+import sys
 
 
 class Ui_MainWindow(object):
@@ -77,11 +78,10 @@ class Ui_MainWindow(object):
 
     def webBrowse(self):
         self.link = self.lineEdit.text()
-        webbrowser.open(self.link)
+        webbrowser.open(self.link, new= 0, autoraise= True)
 
 
 if __name__ == "__main__":
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
